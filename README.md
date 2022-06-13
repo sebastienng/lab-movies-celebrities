@@ -101,7 +101,7 @@ Now that we have defined _Celebrity_ model, let's make it so the user can **add 
 
 ### Steps we will follow in this iteration:
 
-1. Create the `/celebrities/create` POST route in `routes/celebrities.routes.js`.
+1. Create the `/celebrities` POST route in `routes/celebrities.routes.js`.
 2. In that route we have to **create** an instance of the `Celebrity` model (don't forget, we should get all the info from the form through _req.body_)
    - If there is an error, return `400 BAD REQUEST` with an error message
    - If there is no error, return `201 CREATED` with the created celebrity
@@ -232,7 +232,7 @@ Here are the routes we will be using:
 
 | Route          | HTTP Verb | Description                                                    |
 | -------------- | --------- | -------------------------------------------------------------- |
-| `/movies/:id/` | POST      | Send movie data to this route to update the movie with that id |
+| `/movies/:id/` | PATCH     | Send movie data to this route to update the movie with that id |
 
 ### Steps we will follow in this iteration:
 
